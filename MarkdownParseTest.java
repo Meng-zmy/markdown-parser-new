@@ -20,7 +20,6 @@ public class MarkdownParseTest {
         String content = Files.readString(fileName);
         ArrayList<String> result = MarkdownParse.getLinks(content);
         assertEquals("https://something.com", result.get(0));
-        
     }
 
     /*@Test
