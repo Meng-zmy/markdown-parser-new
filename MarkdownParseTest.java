@@ -16,7 +16,7 @@ public class MarkdownParseTest {
 
     @Test
     public void testFile9() throws Exception{
-        Path fileName = Path.of("/Users/zhangmengyuan/Desktop/markdown-parser-new/test-file9.md");
+        Path fileName = Path.of("./test-file9.md");
         String content = Files.readString(fileName);
         ArrayList<String> result = MarkdownParse.getLinks(content);
         assertEquals("https://something.com", result.get(0));
