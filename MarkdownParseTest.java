@@ -14,6 +14,14 @@ public class MarkdownParseTest {
         assertEquals(2, 1 + 1);
     }
 
+    @Test
+    public void testFile9() throws Exception{
+        Path fileName = Path.of("/Users/zhangmengyuan/Desktop/markdown-parser-new/test-file9.md");
+        String content = Files.readString(fileName);
+        ArrayList<String> result = MarkdownParse.getLinks(content);
+        assertEquals("hhhshsh", result.get(0));
+    }
+
     /*@Test
     public void getLinksTest() throws Exception{
         Path fileName = Path.of("./test-file.md");
