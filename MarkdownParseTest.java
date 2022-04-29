@@ -19,7 +19,7 @@ public class MarkdownParseTest {
         Path fileName = Path.of("/Users/zhangmengyuan/Desktop/markdown-parser-new/test-file9.md");
         String content = Files.readString(fileName);
         ArrayList<String> result = MarkdownParse.getLinks(content);
-        assertEquals("hhhshsh", result.get(0));
+        assertEquals("https://something.com", result.get(0));
     }
 
     /*@Test
